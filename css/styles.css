@@ -937,6 +937,9 @@
 }
 
 .surface-glass {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 8px;
   background-color: #1E3A8A;
 }
 
@@ -959,6 +962,9 @@
 }
 
 .surface-neumorphic {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 8px;
   background-color: #E5E7EB;
 }
 
