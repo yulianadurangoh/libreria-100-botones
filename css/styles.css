@@ -4,11 +4,20 @@
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
+  background-color: #1565C0;
+  color: #FFFFFF;
+  border: 2px solid #1565C0;
   border-radius: 5px;
+  cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:focus-visible {
+  outline: 3px solid #111827;
+  outline-offset: 2px;
 }
 
 /* Categoria 1. Fundamentos y colores - basico */
@@ -18,39 +27,45 @@
 }
 
 .btn-secondary {
+  border-color: transparent;
   background-color: #D1D5DB;
   color: #111827;
 }
 
 .btn-success {
+  border-color: transparent;
   background-color: #16703C;
   color: #FFFFFF;
 }
 
 .btn-danger {
+  border-color: transparent;
   background-color: #B91C1C;
   color: #FFFFFF;
 }
 
 .btn-warning {
+  border-color: transparent;
   background-color: #FACC15;
-  color: #FFFFFF;
+  color: #111827;
 }
 
 .btn-info {
+  border-color: transparent;
   background-color: #67E8F9;
-  color: #FFFFFF;
+  color: #111827;
 }
 
 .btn-dark {
+  border-color: transparent;
   background-color: #1F2937;
   color: #FFFFFF;
 }
 
 .btn-light {
   background-color: #F9FAFB;
-  color: #000000;
-  border: #6B7280
+  color: #111827;
+  border: 2px solid #6B7280;
 }
 
 .btn-text {
@@ -60,6 +75,7 @@
 }
 
 .btn-custom {
+  border-color: transparent;
   background-color: #6D28D9;
   color: #FFFFFF;
 }
@@ -84,11 +100,11 @@
 }
 
 .btn-rounded {
-  border-radius: 50px;
+  border-radius: 12px;
 }
 
 .btn-pill {
-  border-radius: 25px;
+  border-radius: 999px;
 }
 
 .btn-circle {
@@ -96,7 +112,7 @@
   width: 50px;
   height: 50px;
   padding: 0;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
@@ -125,7 +141,7 @@
 }
 
 .btn-bold {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .btn-elegant{
@@ -135,29 +151,36 @@
 
 .btn-underline {
   text-decoration: underline;
+  text-decoration-color: #FACC15;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
 }
 
 .btn-shadow-soft {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.3);
 }
 
 .btn-shadow-strong {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 8px 14px rgba(17, 24, 39, 0.6);
 }
 
 .btn-shadow-color {
   background-color: #1565C0;
   color: #FFFFFF;
-  box-shadow: 0 4px 8px #67E8F9;
+  box-shadow: 0 4px 8px #1565C0;
 }
 
 .btn-relief {
   background-color: #1565C0;
   color: #FFFFFF;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -3px 0 rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(17, 24, 39, 0.4);
 }
 
 .btn-text-glow {
+  border: none;
   background-color: #111827;
   color: #FFFFFF;
   text-shadow: 0 0 5px #67E8F9;
@@ -165,41 +188,49 @@
 
 /* Categoria 4. Degradados - intermedio */
 .btn-gradient-horizontal {
+  border: none;
   background: linear-gradient(to right, #1E3A8A, #6D28D9);
   color: #FFFFFF;
 }
 
 .btn-gradient-vertical {
+  border: none;
   background: linear-gradient(to bottom, #064E3B, #0F766E);
   color: #FFFFFF;
 }
 
 .btn-gradient-diagonal {
+  border: none;
   background: linear-gradient(135deg, #7F1D1D, #9A3412);
   color: #FFFFFF;
 }
 
 .btn-gradient-three {
+  border: none;
   background: linear-gradient(to right, #1E3A8A, #6D28D9, #9D174D);
   color: #FFFFFF;
 }
 
 .btn-gradient-radial {
+  border: none;
   background: radial-gradient(circle, #115E59, #134E4A);
   color: #FFFFFF;
 }
 
 .btn-gradient-sunset {
+  border: none;
   background: linear-gradient(to right, #7F1D1D, #9A3412, #B45309);
   color: #FFFFFF;
 }
 
 .btn-gradient-ocean {
+  border: none;
   background: linear-gradient(135deg, #075985, #065F46);
   color: #FFFFFF;
 }
 
 .btn-gradient-pastel {
+  border: none;
   background: linear-gradient(to right, #FBCFE8, #DDD6FE);
   color: #111827;
 }
@@ -213,6 +244,7 @@
 }
 
 .btn-gradient-hover {
+  border: none;
   background: linear-gradient(to right, #1E3A8A, #6D28D9, #1E3A8A);
   background-size: 200% 100%;
   background-position: left center;
@@ -226,14 +258,10 @@
 }
 
 /* Categoria 5. Estados e interacción - intermedio */
-.btn-hover-background {
-  background-color: #1565C0;
-  color: #FFFFFF;
-}
-
 .btn-hover-background:hover,
 .btn-hover-background:focus-visible {
   background-color: #0D47A1;
+  color: #FFFFFF;
 }
 
 .btn-hover-text {
@@ -259,8 +287,6 @@
 }
 
 .btn-hover-shadow {
-  background-color: #1565C0;
-  color: #FFFFFF;
   box-shadow: 0 2px 4px rgba(13, 71, 161, 0.3);
   transition: box-shadow 0.3s ease;
 }
@@ -454,14 +480,16 @@
 }
 
 .btn-image-background {
+  border: none;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("https://picsum.photos/seed/botones/400/200") center / cover;
   background-color: #1F2937;
   color: #FFFFFF;
 }
 
 .btn-image-overlay {
+  border: none;
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("https://picsum.photos/seed/overlay/400/200") center / cover;
@@ -502,6 +530,7 @@
 }
 
 .btn-image-hover {
+  border: none;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -552,6 +581,7 @@
 .btn-double-layer,
 .btn-circle-expand,
 .btn-diagonal-sweep {
+  border: none;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -615,6 +645,7 @@
 }
 
 .btn-underline-expand {
+  border: none;
   position: relative;
   background-color: #FFFFFF;
   color: #1565C0;
@@ -638,6 +669,7 @@
 }
 
 .btn-corners {
+  border: none;
   position: relative;
   background-color: #FFFFFF;
   color: #111827;
@@ -725,6 +757,7 @@
 }
 
 .btn-border-reveal {
+  border: none;
   position: relative;
   background-color: #FFFFFF;
   color: #1565C0;
@@ -733,6 +766,7 @@
 .btn-border-reveal::before,
 .btn-border-reveal::after {
   content: "";
+  box-sizing: border-box;
   position: absolute;
   width: 0;
   height: 0;
@@ -862,12 +896,14 @@
 }
 
 .btn-glow-pulse {
+  border: none;
   background-color: #111827;
   color: #FFFFFF;
   animation: glow-pulse 2s ease-in-out infinite;
 }
 
 .btn-gradient-motion {
+  border: none;
   background: linear-gradient(270deg, #1E3A8A, #6D28D9, #1E3A8A);
   background-size: 200% 100%;
   color: #FFFFFF;
@@ -1068,6 +1104,7 @@
 }
 
 .btn-cinematic {
+  border: none;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -1096,6 +1133,7 @@
 }
 
 .btn-premium {
+  border: none;
   position: relative;
   overflow: hidden;
   display: inline-flex;
@@ -1132,6 +1170,7 @@
 }
 
 .btn-original {
+  border: none;
   position: relative;
   overflow: hidden;
   z-index: 0;
