@@ -1,0 +1,1173 @@
+/* Botones */
+/* Clase principal*/
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Categoria 1. Fundamentos y colores - basico */
+.btn-primary {
+  background-color: #1565C0;
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: #D1D5DB;
+  color: #111827;
+}
+
+.btn-success {
+  background-color: #16703C;
+  color: #FFFFFF;
+}
+
+.btn-danger {
+  background-color: #B91C1C;
+  color: #FFFFFF;
+}
+
+.btn-warning {
+  background-color: #FACC15;
+  color: #FFFFFF;
+}
+
+.btn-info {
+  background-color: #67E8F9;
+  color: #FFFFFF;
+}
+
+.btn-dark {
+  background-color: #1F2937;
+  color: #FFFFFF;
+}
+
+.btn-light {
+  background-color: #F9FAFB;
+  color: #000000;
+  border: #6B7280
+}
+
+.btn-text {
+  background-color: transparent;
+  color: #1565C0;
+  border: none;
+}
+
+.btn-custom {
+  background-color: #6D28D9;
+  color: #FFFFFF;
+}
+
+/* Categoria 2. Bordes, tamaños y formas */
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #1565C0;
+  color: #1565C0
+}
+
+.btn-border-thick {
+  border-width: 4px;
+}
+
+.btn-border-dashed {
+  border-style: dashed;
+}
+
+.btn-border-dotted {
+  border-style: dotted;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.btn-pill {
+  border-radius: 25px;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-large {
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Categoria 3. Tipogarfía y sombras - Básico */
+.btn-uppercase {
+  text-transform: uppercase;
+}
+
+.btn-spaced {
+  letter-spacing: 2px;
+}
+
+.btn-bold {
+  font-weight: bold;
+}
+
+.btn-elegant{
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+.btn-underline {
+  text-decoration: underline;
+}
+
+.btn-shadow-soft {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-shadow-strong {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-shadow-color {
+  background-color: #1565C0;
+  color: #FFFFFF;
+  box-shadow: 0 4px 8px #67E8F9;
+}
+
+.btn-relief {
+  background-color: #1565C0;
+  color: #FFFFFF;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-text-glow {
+  background-color: #111827;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #67E8F9;
+}
+
+/* Categoria 4. Degradados - intermedio */
+.btn-gradient-horizontal {
+  background: linear-gradient(to right, #1E3A8A, #6D28D9);
+  color: #FFFFFF;
+}
+
+.btn-gradient-vertical {
+  background: linear-gradient(to bottom, #064E3B, #0F766E);
+  color: #FFFFFF;
+}
+
+.btn-gradient-diagonal {
+  background: linear-gradient(135deg, #7F1D1D, #9A3412);
+  color: #FFFFFF;
+}
+
+.btn-gradient-three {
+  background: linear-gradient(to right, #1E3A8A, #6D28D9, #9D174D);
+  color: #FFFFFF;
+}
+
+.btn-gradient-radial {
+  background: radial-gradient(circle, #115E59, #134E4A);
+  color: #FFFFFF;
+}
+
+.btn-gradient-sunset {
+  background: linear-gradient(to right, #7F1D1D, #9A3412, #B45309);
+  color: #FFFFFF;
+}
+
+.btn-gradient-ocean {
+  background: linear-gradient(135deg, #075985, #065F46);
+  color: #FFFFFF;
+}
+
+.btn-gradient-pastel {
+  background: linear-gradient(to right, #FBCFE8, #DDD6FE);
+  color: #111827;
+}
+
+.btn-gradient-border {
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#FFFFFF, #FFFFFF) padding-box,
+    linear-gradient(to right, #1565C0, #6D28D9) border-box;
+  color: #111827;
+}
+
+.btn-gradient-hover {
+  background: linear-gradient(to right, #1E3A8A, #6D28D9, #1E3A8A);
+  background-size: 200% 100%;
+  background-position: left center;
+  color: #FFFFFF;
+  transition: background-position 0.5s ease;
+}
+
+.btn-gradient-hover:hover,
+.btn-gradient-hover:focus-visible {
+  background-position: right center;
+}
+
+/* Categoria 5. Estados e interacción - intermedio */
+.btn-hover-background {
+  background-color: #1565C0;
+  color: #FFFFFF;
+}
+
+.btn-hover-background:hover,
+.btn-hover-background:focus-visible {
+  background-color: #0D47A1;
+}
+
+.btn-hover-text {
+  background-color: #FFFFFF;
+  color: #1565C0;
+}
+
+.btn-hover-text:hover,
+.btn-hover-text:focus-visible {
+  color: #6D28D9;
+}
+
+.btn-hover-border {
+  background-color: #FFFFFF;
+  color: #111827;
+  border: 2px solid #1565C0;
+  transition: border-color 0.3s ease;
+}
+
+.btn-hover-border:hover,
+.btn-hover-border:focus-visible {
+  border-color: #6D28D9;
+}
+
+.btn-hover-shadow {
+  background-color: #1565C0;
+  color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(13, 71, 161, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-hover-shadow:hover,
+.btn-hover-shadow:focus-visible {
+  box-shadow: 0 8px 20px rgba(13, 71, 161, 0.6);
+}
+
+.btn-hover-underline {
+  background-color: #FFFFFF;
+  color: #1565C0;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.3s ease, text-decoration-thickness 0.3s ease;
+}
+
+.btn-hover-underline:hover,
+.btn-hover-underline:focus-visible {
+  text-decoration-color: #1565C0;
+  text-decoration-thickness: 3px;
+}
+
+.btn-active {
+  background-color: #1565C0;
+  color: #FFFFFF;
+}
+
+.btn-active:active {
+  background-color: #0D47A1;
+}
+
+.btn-focus {
+  background-color: #1565C0;
+  color: #FFFFFF;
+}
+
+.btn-focus:focus-visible {
+  outline: 3px solid #FACC15;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px #111827;
+}
+
+.btn-disabled,
+.btn-disabled:disabled {
+  background-color: #E5E7EB;
+  color: #4B5563;
+  border: 1px dashed #9CA3AF;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.btn-transition-slow {
+  background-color: #1565C0;
+  color: #FFFFFF;
+  transition: background-color 1.2s ease, color 1.2s ease;
+}
+
+.btn-transition-slow:hover,
+.btn-transition-slow:focus-visible {
+  background-color: #FACC15;
+  color: #111827;
+}
+
+.btn-transition-stagger {
+  background-color: #1565C0;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, transform 0.4s ease 0.3s;
+}
+
+.btn-transition-stagger:hover,
+.btn-transition-stagger:focus-visible {
+  background-color: #6D28D9;
+  transform: translateY(-4px);
+}
+
+/* Categoria 6. Transformaciones - intermedio */
+.btn-grow,
+.btn-shrink,
+.btn-lift,
+.btn-move-right,
+.btn-rotate,
+.btn-skew,
+.btn-press,
+.btn-perspective {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-grow:hover,
+.btn-grow:focus-visible {
+  transform: scale(1.1);
+}
+
+.btn-shrink:hover,
+.btn-shrink:focus-visible {
+  transform: scale(0.9);
+}
+
+.btn-lift:hover,
+.btn-lift:focus-visible {
+  transform: translateY(-6px);
+}
+
+.btn-move-right:hover,
+.btn-move-right:focus-visible {
+  transform: translateX(10px);
+}
+
+.btn-rotate:hover,
+.btn-rotate:focus-visible {
+  transform: rotate(-5deg);
+}
+
+.btn-skew:hover,
+.btn-skew:focus-visible {
+  transform: skewX(-10deg);
+}
+
+.btn-press:active {
+  transform: translateY(3px);
+}
+
+.btn-perspective:hover,
+.btn-perspective:focus-visible {
+  transform: perspective(400px) rotateX(15deg) rotateY(-10deg);
+}
+
+.btn-icon-move {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-icon-move::after {
+  content: "→";
+  transition: transform 0.3s ease;
+}
+
+.btn-icon-move:hover::after,
+.btn-icon-move:focus-visible::after {
+  transform: translateX(6px);
+}
+
+.btn-transform-combined {
+  box-shadow: 0 2px 4px rgba(17, 24, 39, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-transform-combined:hover,
+.btn-transform-combined:focus-visible {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.35);
+}
+
+/* Categoria 7. Iconos e imágenes - intermedio a avanzado */
+.btn-icon-left,
+.btn-icon-right,
+.btn-icon-only,
+.btn-download,
+.btn-avatar,
+.btn-icon-reveal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-icon-left::before {
+  content: "★";
+}
+
+.btn-icon-right::after {
+  content: "→";
+}
+
+.btn-icon-only {
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn-icon-only::before {
+  content: "🔍";
+}
+
+.btn-download::before {
+  content: "⬇";
+}
+
+.btn-image-background {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://picsum.photos/seed/botones/400/200") center / cover;
+  background-color: #1F2937;
+  color: #FFFFFF;
+}
+
+.btn-image-overlay {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://picsum.photos/seed/overlay/400/200") center / cover;
+  background-color: #1F2937;
+  color: #FFFFFF;
+}
+
+.btn-avatar {
+  padding: 6px 16px 6px 6px;
+  border-radius: 999px;
+}
+
+.btn-avatar img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.btn-icon-separated {
+  display: inline-flex;
+  align-items: stretch;
+  padding: 0;
+  overflow: hidden;
+}
+
+.btn-icon-separated::before {
+  content: "✓";
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-icon-separated span {
+  padding: 10px 20px;
+}
+
+.btn-image-hover {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #1F2937;
+  color: #FFFFFF;
+}
+
+.btn-image-hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://picsum.photos/seed/hover/400/200") center / cover;
+  transition: transform 0.5s ease;
+}
+
+.btn-image-hover:hover::before,
+.btn-image-hover:focus-visible::before {
+  transform: scale(1.2);
+}
+
+.btn-icon-reveal {
+  gap: 0;
+}
+
+.btn-icon-reveal::after {
+  content: "→";
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-width 0.3s ease, opacity 0.3s ease, margin-left 0.3s ease;
+}
+
+.btn-icon-reveal:hover::after,
+.btn-icon-reveal:focus-visible::after {
+  max-width: 20px;
+  margin-left: 8px;
+  opacity: 1;
+}
+
+/* Categoria 8. Efectos con pseudoelementos - avanzado */
+.btn-fill-left,
+.btn-fill-bottom,
+.btn-fill-center,
+.btn-shine,
+.btn-double-layer,
+.btn-circle-expand,
+.btn-diagonal-sweep {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #1565C0;
+  color: #FFFFFF;
+}
+
+.btn-fill-left::before,
+.btn-fill-bottom::before,
+.btn-fill-center::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: #0D47A1;
+  transition: transform 0.4s ease;
+}
+
+.btn-fill-left::before {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.btn-fill-bottom::before {
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.btn-fill-center::before {
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.btn-fill-left:hover::before,
+.btn-fill-left:focus-visible::before,
+.btn-fill-center:hover::before,
+.btn-fill-center:focus-visible::before {
+  transform: scaleX(1);
+}
+
+.btn-fill-bottom:hover::before,
+.btn-fill-bottom:focus-visible::before {
+  transform: scaleY(1);
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.btn-shine:hover::after,
+.btn-shine:focus-visible::after {
+  left: 125%;
+}
+
+.btn-underline-expand {
+  position: relative;
+  background-color: #FFFFFF;
+  color: #1565C0;
+}
+
+.btn-underline-expand::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 6px;
+  height: 2px;
+  background-color: #1565C0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.btn-underline-expand:hover::after,
+.btn-underline-expand:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.btn-corners {
+  position: relative;
+  background-color: #FFFFFF;
+  color: #111827;
+}
+
+.btn-corners::before,
+.btn-corners::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #1565C0;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.btn-corners::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.btn-corners::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.btn-corners:hover::before,
+.btn-corners:hover::after,
+.btn-corners:focus-visible::before,
+.btn-corners:focus-visible::after {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+}
+
+.btn-double-layer::before,
+.btn-double-layer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  transition: transform 0.4s ease;
+}
+
+.btn-double-layer::before {
+  top: 0;
+  background-color: #0D47A1;
+  transform: translateX(-100%);
+}
+
+.btn-double-layer::after {
+  bottom: 0;
+  background-color: #4C1D95;
+  transform: translateX(100%);
+}
+
+.btn-double-layer:hover::before,
+.btn-double-layer:hover::after,
+.btn-double-layer:focus-visible::before,
+.btn-double-layer:focus-visible::after {
+  transform: translateX(0);
+}
+
+.btn-circle-expand::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: #0D47A1;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+
+.btn-circle-expand:hover::before,
+.btn-circle-expand:focus-visible::before {
+  transform: translate(-50%, -50%) scale(30);
+}
+
+.btn-border-reveal {
+  position: relative;
+  background-color: #FFFFFF;
+  color: #1565C0;
+}
+
+.btn-border-reveal::before,
+.btn-border-reveal::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  border-radius: inherit;
+  transition: border-color 0s, width 0.3s ease, height 0.3s ease;
+}
+
+.btn-border-reveal::before {
+  top: 0;
+  left: 0;
+}
+
+.btn-border-reveal::after {
+  bottom: 0;
+  right: 0;
+}
+
+.btn-border-reveal:hover::before,
+.btn-border-reveal:focus-visible::before {
+  width: 100%;
+  height: 100%;
+  border-top-color: #1565C0;
+  border-right-color: #1565C0;
+  transition: width 0.3s ease, height 0.3s ease 0.3s;
+}
+
+.btn-border-reveal:hover::after,
+.btn-border-reveal:focus-visible::after {
+  width: 100%;
+  height: 100%;
+  border-bottom-color: #1565C0;
+  border-left-color: #1565C0;
+  transition: border-color 0s 0.6s, width 0.3s ease 0.6s, height 0.3s ease 0.9s;
+}
+
+.btn-diagonal-sweep::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  z-index: -1;
+  background-color: #0D47A1;
+  transform: skewX(-30deg);
+  transition: left 0.5s ease;
+}
+
+.btn-diagonal-sweep:hover::before,
+.btn-diagonal-sweep:focus-visible::before {
+  left: -20%;
+}
+
+/* Categoria 9. Animaciones CSS - avanzado */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+@keyframes heartbeat {
+  0%, 40%, 100% { transform: scale(1); }
+  10%, 30% { transform: scale(1.1); }
+  20% { transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-10px); }
+  50% { transform: translateY(0); }
+  70% { transform: translateY(-4px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 4px #22D3EE; }
+  50% { box-shadow: 0 0 20px #22D3EE, 0 0 40px #22D3EE; }
+}
+
+@keyframes gradient-motion {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes sequence {
+  0% { transform: translateY(0) scale(1); box-shadow: none; }
+  30% { transform: translateY(-6px) scale(1); box-shadow: none; }
+  60% { transform: translateY(-6px) scale(1.08); box-shadow: none; }
+  100% { transform: translateY(-6px) scale(1.08); box-shadow: 0 10px 20px rgba(17, 24, 39, 0.4); }
+}
+
+.btn-pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.btn-heartbeat {
+  animation: heartbeat 1.6s ease-in-out infinite;
+}
+
+.btn-float {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+.btn-shake:hover,
+.btn-shake:focus-visible {
+  animation: shake 0.5s ease;
+}
+
+.btn-bounce:hover,
+.btn-bounce:focus-visible {
+  animation: bounce 0.6s ease;
+}
+
+.btn-glow-pulse {
+  background-color: #111827;
+  color: #FFFFFF;
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.btn-gradient-motion {
+  background: linear-gradient(270deg, #1E3A8A, #6D28D9, #1E3A8A);
+  background-size: 200% 100%;
+  color: #FFFFFF;
+  animation: gradient-motion 4s ease infinite;
+}
+
+.btn-icon-spin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-icon-spin::before {
+  content: "⚙";
+  display: inline-block;
+}
+
+.btn-icon-spin:hover::before,
+.btn-icon-spin:focus-visible::before {
+  animation: spin 1s linear infinite;
+}
+
+.btn-loading {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: progress;
+}
+
+.btn-loading::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #FFFFFF;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.btn-sequence:hover,
+.btn-sequence:focus-visible {
+  animation: sequence 0.9s ease forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn::before,
+  .btn::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Categoria 10. Botones de diseño avanzado - desafío final */
+.btn-neon {
+  background-color: #111827;
+  color: #FFFFFF;
+  border: 2px solid #22D3EE;
+  box-shadow: 0 0 6px #22D3EE, inset 0 0 6px rgba(34, 211, 238, 0.4);
+  text-shadow: 0 0 4px #22D3EE;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-neon:hover,
+.btn-neon:focus-visible {
+  box-shadow: 0 0 12px #22D3EE, 0 0 30px #22D3EE, inset 0 0 10px rgba(34, 211, 238, 0.6);
+}
+
+.surface-glass {
+  background-color: #1E3A8A;
+}
+
+.btn-glass {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+@supports (backdrop-filter: blur(8px)) {
+  .btn-glass {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+  }
+}
+
+.btn-glass:hover,
+.btn-glass:focus-visible {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.surface-neumorphic {
+  background-color: #E5E7EB;
+}
+
+.btn-neumorphic {
+  background-color: #E5E7EB;
+  color: #111827;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 6px 6px 12px #9CA3AF, -6px -6px 12px #FFFFFF;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-neumorphic:active {
+  box-shadow: inset 6px 6px 12px #9CA3AF, inset -6px -6px 12px #FFFFFF;
+}
+
+.btn-retro-3d {
+  background-color: #FACC15;
+  color: #111827;
+  border: 2px solid #111827;
+  border-radius: 0;
+  box-shadow: 5px 5px 0 #111827;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-retro-3d:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 #111827;
+}
+
+.btn-metallic {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #E5E7EB, #9CA3AF 50%, #F9FAFB);
+  color: #111827;
+  border: 1px solid #111827;
+}
+
+.btn-metallic::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.7s ease;
+}
+
+.btn-metallic:hover::after,
+.btn-metallic:focus-visible::after {
+  left: 130%;
+}
+
+@keyframes rainbow-border {
+  from { background-position: 0 0, 0% 50%; }
+  to { background-position: 0 0, 150% 50%; }
+}
+
+.btn-rainbow-border {
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#111827, #111827) padding-box,
+    linear-gradient(90deg, #1565C0, #6D28D9, #B91C1C, #1565C0) border-box;
+  background-size: 100% 100%, 300% 100%;
+  color: #FFFFFF;
+  animation: rainbow-border 3s linear infinite;
+}
+
+.btn-double-text {
+  position: relative;
+  overflow: hidden;
+  background-color: #1565C0;
+  color: #FFFFFF;
+}
+
+.btn-double-text span,
+.btn-double-text::after {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.btn-double-text::after {
+  content: attr(data-hover);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(150%);
+}
+
+.btn-double-text:hover span,
+.btn-double-text:focus-visible span {
+  transform: translateY(-200%);
+}
+
+.btn-double-text:hover::after,
+.btn-double-text:focus-visible::after {
+  transform: translateY(-50%);
+}
+
+.btn-cinematic {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding: 16px 32px;
+  background-color: #111827;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-cinematic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://picsum.photos/seed/cinematic/600/300") center / cover;
+  transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.btn-cinematic:hover::before,
+.btn-cinematic:focus-visible::before {
+  transform: scale(1.15);
+  filter: brightness(1.2);
+}
+
+.btn-premium {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #1E3A8A, #6D28D9);
+  color: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(17, 24, 39, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-premium::before {
+  content: "✦";
+}
+
+.btn-premium::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.35), transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.btn-premium:hover,
+.btn-premium:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.5);
+}
+
+.btn-premium:hover::after,
+.btn-premium:focus-visible::after {
+  transform: translateX(100%);
+}
+
+.btn-original {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #064E3B, #0F766E, #115E59);
+  background-size: 200% 200%;
+  color: #FFFFFF;
+  border-radius: 999px;
+  animation: gradient-motion 5s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.btn-original::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: #FACC15;
+  clip-path: circle(0% at 0% 50%);
+  transition: clip-path 0.5s ease;
+}
+
+.btn-original::after {
+  content: "➜";
+  transition: transform 0.3s ease;
+}
+
+.btn-original:hover,
+.btn-original:focus-visible {
+  color: #111827;
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 18px rgba(6, 78, 59, 0.5);
+}
+
+.btn-original:hover::before,
+.btn-original:focus-visible::before {
+  clip-path: circle(150% at 0% 50%);
+}
+
+.btn-original:hover::after,
+.btn-original:focus-visible::after {
+  transform: translateX(4px) rotate(-45deg);
+}
